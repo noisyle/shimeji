@@ -1,8 +1,10 @@
 package com.wishes.update;
 
-import lombok.Getter;
-
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JProgressBar;
 
 /**
  * @Author:郑龙
@@ -43,10 +45,13 @@ public class DownloadWindow extends JFrame {
     /**
      * 主窗体面板
      */
-    @Getter
     private JPanel mPanel;
 
-    /**
+    public JPanel getMPanel() {
+		return mPanel;
+	}
+
+	/**
      * 下载完成后的提示语
      */
     private JLabel warnText;

@@ -1,7 +1,5 @@
 package com.wishes.update;
 
-import lombok.Data;
-
 import java.util.List;
 
 /**
@@ -9,7 +7,6 @@ import java.util.List;
  * @Date:2018-11-08 11:55
  * @Description:针对下载指示文件进行解析并下载文件
  */
-@Data
 public class DataAnalysis {
     /**
      * 版本
@@ -36,4 +33,45 @@ public class DataAnalysis {
      * 需要更新的子节点
      */
     private List<Node> nodeList;
+
+	public String getVersion() {
+		return version;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public String getUpdateType() {
+		return updateType;
+	}
+
+	public void setUpdateType(String updateType) {
+		this.updateType = updateType;
+	}
+
+	public List<Node> getNodeList() {
+		return nodeList;
+	}
+
+	public void setNodeList(List<Node> nodeList) {
+		this.nodeList = nodeList;
+	}
+    
 }

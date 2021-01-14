@@ -1,22 +1,21 @@
 package com.wishes.fix;
 
 
-import com.wishes.constant.Constant;
-import lombok.Data;
-import org.apache.log4j.Logger;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
+
+import com.wishes.constant.Constant;
+
 /**
  * @Author:郑龙
  * @Date:2018-10-10 15:07
  * @Description:将源代码从ant移植到maven部署时需要做许多修改，这个类提供多种修改以及精简工具
  */
-@Data
 public class OriginEngineFix {
     private static Logger logger = Logger.getLogger(OriginEngineFix.class);
 
@@ -78,5 +77,17 @@ public class OriginEngineFix {
         }
         return properties;
     }
+
+	public String getBASE_PATH() {
+		return BASE_PATH;
+	}
+
+	public String getBASE_ENVIRONMENT_PATH() {
+		return BASE_ENVIRONMENT_PATH;
+	}
+
+	public String getBASE_IMG_PATH() {
+		return BASE_IMG_PATH;
+	}
 
 }

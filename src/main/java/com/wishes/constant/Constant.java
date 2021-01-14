@@ -1,7 +1,5 @@
 package com.wishes.constant;
 
-import lombok.Getter;
-
 /**
  * @Author:郑龙
  * @Date:2018-11-07 16:45
@@ -33,8 +31,12 @@ public class Constant {
             this.type = type;
         }
 
-        @Getter
         String type;
+
+		public String getType() {
+			return type;
+		}
+        
     }
 
     /**********************

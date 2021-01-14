@@ -1,19 +1,19 @@
 package com.wishes.generator;
 
-import com.alibaba.fastjson.JSONObject;
-import com.wishes.constant.Constant;
-import com.wishes.update.DataAnalysis;
-import com.wishes.update.Node;
-import lombok.Getter;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.alibaba.fastjson.JSONObject;
+import com.wishes.constant.Constant;
+import com.wishes.update.DataAnalysis;
+import com.wishes.update.Node;
 
 /**
  * @Author:郑龙

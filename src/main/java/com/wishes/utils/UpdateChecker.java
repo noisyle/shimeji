@@ -1,19 +1,24 @@
 package com.wishes.utils;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.apache.log4j.Logger;
+
 import com.alibaba.fastjson.JSONObject;
 import com.wishes.constant.Constant;
 import com.wishes.fix.OriginEngineFix;
 import com.wishes.update.DataAnalysis;
 import com.wishes.update.DownloadWindow;
 import com.wishes.update.Node;
-import lombok.Data;
-import okhttp3.*;
-import org.apache.log4j.Logger;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 /**
  * @Author:郑龙
@@ -310,7 +315,6 @@ public class UpdateChecker {
     /**
      * 记录当前版本
      */
-    @Data
     public static class Version {
         /**
          * 版本
@@ -348,5 +352,30 @@ public class UpdateChecker {
         public int isNewestVersion(Version v) {
             return getVersion().compareTo(v.getVersion());
         }
+
+		public String getVersion() {
+			return Version;
+		}
+
+		public void setVersion(String version) {
+			Version = version;
+		}
+
+		public String getWhatNew() {
+			return whatNew;
+		}
+
+		public void setWhatNew(String whatNew) {
+			this.whatNew = whatNew;
+		}
+
+		public String getDownloadURL() {
+			return downloadURL;
+		}
+
+		public void setDownloadURL(String downloadURL) {
+			this.downloadURL = downloadURL;
+		}
+        
     }
 }
