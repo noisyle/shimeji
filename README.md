@@ -1,7 +1,7 @@
-###forked from [a1098832322/shimeji](https://github.com/a1098832322/shimeji)
+### forked from [a1098832322/shimeji](https://github.com/a1098832322/shimeji)
 
 
-###安装 priv_lib 目录下的私有依赖
+### 安装 priv_lib 目录下的私有依赖
 * AbsoluteLayout
 
 ```
